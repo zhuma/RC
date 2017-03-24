@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!--<script src="js/jquery-2.1.4.min.js"></script>-->
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/html5shiv.js"></script>
+        <script type="text/javascript" src="js/modernizr.js"></script>
+        <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    <!--map-->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=g1X7ZPk3qouk97wOyAvm3mBO8NuOAMcG"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+    <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css"/>
+</head>
+<body>
+<div class="wrap pr">
+    <!--头部-->
+    <header class="head clearFix">
+        <div class="head-con">
+            <div class="logo fl">
+                <a href="#"><img src="img/logo.png"></a>
+            </div>
+            <section class="search pr fl">
+                <input type="text" placeholder="搜你喜欢的" title="搜你喜欢的">
+                <i class="pa icon-search"></i>
+            </section>
+            <section class="reg-login fl clearFix">
+                <button type="button" class="fl reg-btn">注册</button>
+                <button type="button" class="fl login-btn">登录</button>
+            </section>
+            <!--用户资料-->
+            <section class="user-login reg-login fl clearFix dn">
+                <div class="user-pic fl">
+                    <img src="img/user.png">
+                </div>
+                <button type="button" class="fl login-btn">退出</button>
+            </section>
+        </div>
+    </header>
+    <!--导航-->
+    <nav class="nav pr">
+        <ul class="clearFix">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">赛车手</a></li>
+            <li><a href="#">场馆</a></li>
+            <li>
+                <a href="#" class="active">比赛</a>
+                <div class="sub-nav-bg pa dn">
+                    <ul class="sub-list">
+                        <li class="active"><a href="#">所有赛事</a></li>
+                        <li><a href="#">地区赛事</a></li>
+                        <li><a href="#">锦标赛</a></li>
+                        <li><a href="#">排行榜</a></li>
+                        <li><a href="#">赛事日历</a></li>
+                        <li><a href="#">结果公告</a></li>
+                        <li><a href="#">赛程报道</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">赛车销售</a></li>
+            <li><a href="#">R/C公司</a></li>
+            <li><a href="#">R/C专业比赛</a></li>
+            <li><a href="#">联系我们</a></li>
+        </ul>
+    </nav>
+    <!--banner-->
+    <div class="banner pr">
+        <ul class="pa banner-slide">
+            <li class="pa"><a href="#"><img src="img/wed-track-2.jpg"></a></li>
+            <li class="pa"><a href="#"><img src="img/wed-track-2.jpg"></a></li>
+            <li class="pa"><a href="#"><img src="img/wed-track-2.jpg"></a></li>
+        </ul>
+        <div class="switch-btn pa">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!--main container-->
+   <div class="main-container">
+       <div class="container">
+           <div class="s-one clearFix">
+               <section class="s-one-fl fl">
+                   <figure class="pr">
+                       <img src="img/s1_1.jpg">
+                       <div class="pic-des pa">
+                           <span class="icon-stop db">1079</span>
+                           <span class="db pic-n">车场</span>
+                           <a class="db fr" href="#">了解更多</a>
+                       </div>
+                   </figure>
+               </section>
+               <section class="s-one-fr fr">
+                   <div class="s-row clearFix">
+                       <figure class="pr fl">
+                           <img src="img/s1_2.jpg">
+                           <div class="pic-des pa">
+                               <span class="icon-driver db">25381</span>
+                               <span class="db pic-n">赛车手</span>
+                               <a class="db fr" href="#">了解更多</a>
+                           </div>
+                       </figure>
+                       <figure class="pr fr">
+                           <img src="img/s1_3.jpg">
+                           <div class="pic-des pa">
+                               <span class="icon-edit db">158360</span>
+                               <span class="db pic-n">注册人数</span>
+                               <a class="db fr" href="#">了解更多</a>
+                           </div>
+                       </figure>
+                   </div>
+                   <figure class="pr s-prize">
+                       <img src="img/s1_4.jpg">
+                       <div class="pic-des pa">
+                           <span class="icon-prize db">93</span>
+                           <span class="db pic-n">赛事</span>
+                           <a class="db fr" href="#">了解更多</a>
+                       </div>
+                   </figure>
+               </section>
+           </div>
+           <div class="s-two clearFix">
+               <aside class="sidebar fl">
+                   <section class="select-city">
+                       <h3>选择城市</h3>
+                       <section class="sel-area pr">
+                           <input type="text" placeholder="搜索城市" title="搜索城市">
+                           <i class="pa icon-search"></i>
+                       </section>
+                       <ul class="city-list clearFix">
+                           <li><a href="#">北京</a></li>
+                           <li><a href="#">广州</a></li>
+                           <li><a href="#">成都</a></li>
+                           <li><a href="#">上海</a></li>
+                           <li><a href="#">武汉</a></li>
+                           <li><a href="#">三亚</a></li>
+                           <li><a href="#">重庆</a></li>
+                           <li><a href="#">郑州</a></li>
+                           <li><a href="#">长沙</a></li>
+                           <li><a href="#">深圳</a></li>
+                           <li><a href="#">丽江</a></li>
+                           <li><a href="#">昆明</a></li>
+                           <li><a href="#">沈阳</a></li>
+                           <li><a href="#">青岛</a></li>
+                           <li><a href="#">厦门</a></li>
+                           <li><a href="#">大理</a></li>
+                           <li><a href="#">西安</a></li>
+                           <li><a href="#">苏州</a></li>
+                       </ul>
+                   </section>
+                   <section class="fix-block mt">350*290px</section>
+                   <section class="fix-block">350*290px</section>
+                   <section class="fix-block">350*290px</section>
+               </aside>
+               <div class="fr court">
+                   <section class="road-court">
+                       <h3 class="road-bg">平路赛场</h3>
+                       <section class="court-area road-bd">
+                           <section class="court-list clearFix">
+                               <section class="court-pic fl">
+                                   <img src="img/court-pic.jpg">
+                               </section>
+                               <section class="court-des fl">
+                                   <h3 class="clearFix bColor">四番大奖赛<i class="icon-plus fr"></i></h3>
+                                   <p><em>地点：</em><span class="bg">北京市</span><span>盈控遥控模型车竞技场</span></p>
+                                   <p><em>时间：</em><span>2016/11/06-2016/11/06</span></p>
+                                   <div class="court-address clearFix">
+                                       <p class="fl"><span class="address">顺义区天竺杨二营26号</span><span class="send">发送位置到手机</span></p>
+                                       <button class="fr sign-up">立即报名</button>
+                                   </div>
+                               </section>
+                           </section>
+                           <section class="court-list clearFix">
+                               <section class="court-pic fl">
+                                   <img src="img/court-pic.jpg">
+                               </section>
+                               <section class="court-des fl">
+                                   <h3 class="clearFix bColor">四番大奖赛<i class="icon-plus fr"></i></h3>
+                                   <p><em>地点：</em><span class="bg">北京市</span><span>盈控遥控模型车竞技场</span></p>
+                                   <p><em>时间：</em><span>2016/11/06-2016/11/06</span></p>
+                                   <div class="court-address clearFix">
+                                       <p class="fl"><span class="address">顺义区天竺杨二营27号</span><span class="send">发送位置到手机</span></p>
+                                       <button class="fr sign-up">立即报名</button>
+                                   </div>
+                               </section>
+                           </section>
+                           <section class="court-list clearFix">
+                               <section class="court-pic fl">
+                                   <img src="img/court-pic.jpg">
+                               </section>
+                               <section class="court-des fl">
+                                   <h3 class="clearFix bColor">四番大奖赛<i class="icon-plus fr"></i></h3>
+                                   <p><em>地点：</em><span class="bg">北京市</span><span>盈控遥控模型车竞技场</span></p>
+                                   <p><em>时间：</em><span>2016/11/06-2016/11/06</span></p>
+                                   <div class="court-address clearFix">
+                                       <p class="fl"><span class="address">顺义区天竺杨二营28号</span><span class="send">发送位置到手机</span></p>
+                                       <button class="fr sign-up">立即报名</button>
+                                   </div>
+                               </section>
+                           </section>
+                       </section>
+                   </section>
+                   <section class="road-court">
+                       <h3 class="cross-bg">越野赛场</h3>
+                       <section class="court-area cross-bd">
+                           <section class="court-list clearFix">
+                               <section class="court-pic fl">
+                                   <img src="img/court-pic.jpg">
+                               </section>
+                               <section class="court-des fl">
+                                   <h3 class="clearFix rColor">四番大奖赛<i class="icon-plus fr"></i></h3>
+                                   <p><em>地点：</em><span class="bg">北京市</span><span>盈控遥控模型车竞技场</span></p>
+                                   <p><em>时间：</em><span>2016/11/06-2016/11/06</span></p>
+                                   <div class="court-address clearFix">
+                                       <p class="fl"><span class="address">顺义区天竺杨二营26号</span><span class="send">发送位置到手机</span></p>
+                                       <button class="fr sign-up">立即报名</button>
+                                   </div>
+                               </section>
+                           </section>
+                           <section class="court-list clearFix">
+                               <section class="court-pic fl">
+                                   <img src="img/court-pic.jpg">
+                               </section>
+                               <section class="court-des fl">
+                                   <h3 class="clearFix rColor">四番大奖赛<i class="icon-plus fr"></i></h3>
+                                   <p><em>地点：</em><span class="bg">北京市</span><span>盈控遥控模型车竞技场</span></p>
+                                   <p><em>时间：</em><span>2016/11/06-2016/11/06</span></p>
+                                   <div class="court-address clearFix">
+                                       <p class="fl"><span class="address">顺义区天竺杨二营26号</span><span class="send">发送位置到手机</span></p>
+                                       <button class="fr sign-up">立即报名</button>
+                                   </div>
+                               </section>
+                           </section>
+                           <section class="court-list clearFix">
+                               <section class="court-pic fl">
+                                   <img src="img/court-pic.jpg">
+                               </section>
+                               <section class="court-des fl">
+                                   <h3 class="clearFix rColor">四番大奖赛<i class="icon-plus fr"></i></h3>
+                                   <p><em>地点：</em><span class="bg">北京市</span><span>盈控遥控模型车竞技场</span></p>
+                                   <p><em>时间：</em><span>2016/11/06-2016/11/06</span></p>
+                                   <div class="court-address clearFix">
+                                       <p class="fl"><span class="address">顺义区天竺杨二营26号</span><span class="send">发送位置到手机</span></p>
+                                       <button class="fr sign-up">立即报名</button>
+                                   </div>
+                               </section>
+                           </section>
+                       </section>
+                   </section>
+               </div>
+           </div>
+       </div>
+   </div>
+    <!--footer-->
+    <footer class="foot">
+        <p>CopyRight © 2015-2016 Incom sport &media LTC.Com,All Right Rese</p>
+    </footer>
+    <!--发送位置给手机-->
+    <div class="send-dialog send-pos pa">
+        <div class="send-dialog-con pa">
+            <div class="send-map"><div id="allmap" style="height: 100%;"></div></div>
+            <p class="send-map-tit">顺义区天竺杨二营26号</p>
+            <section class="send-to-phone">
+                <input type="text" placeholder="输入手机号发送地图到手机" title="输入手机号发送地图到手机">
+                <button type="button"><i class="icon-phone fl"></i><em class="fl">发送位置到手机</em></button>
+            </section>
+            <div class="close-btn"></div>
+        </div>
+    </div>
+    <!--注册-->
+    <div class="send-dialog begin-reg pa">
+        <div class="reg-dialog pa">
+            <h3 class="reg-tit pr">
+                <span>即刻注册拥有RC护照</span>
+                <img src="img/icon-cloth.png" class="pa">
+            </h3>
+            <div class="reg-main">
+                <div class="process-bar pr">
+                    <span class="pa"></span>
+                </div>
+                <div class="reg-form">
+                    <form action="#">
+                        <p><input class="dynamic-code fl" type="text" placeholder="输入手机号发送验证码" title="输入手机号发送验证码"><button type="button" class="fr send-code">发送动态码</button></p>
+                        <p><input type="text" class="code" placeholder="输入动态码" title="输入动态码"></p>
+                        <p><input type="password" class="pwd" placeholder="输入密码6-32字符" title="输入密码6-32字符"></p>
+                    </form>
+                    <div class="agreement">
+                        <label for="agreement">
+                            <input type="checkbox" id="agreement" hidden checked>
+                            <span class="checked">同意RC PASS《用户使用协议》</span>
+                        </label>
+                    </div>
+                    <div class="switch-btn step clearFix">
+                        <span class="active"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="sub-btn">
+                        <button type="button" id="sub">提交</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--注册成功-->
+    <div class="send-dialog reg-suc pa">
+        <div class="reg-dialog pa">
+            <h3 class="reg-tit pr">
+                <span>即刻注册拥有RC护照</span>
+                <img src="img/icon-cloth.png" class="pa">
+            </h3>
+            <div class="reg-main">
+                <div class="process-bar pr">
+                    <span class="pa suc-bar"></span>
+                </div>
+                <p class="wel">欢迎来到遥控竞技的世界</p>
+                <div class="wel-ban pr">
+                    <img class="pa" src="img/wel1.png">
+                    <img class="dn pa" src="img/wel2.png">
+                    <img class="dn pa" src="img/wel3.png">
+                    <img class="dn pa" src="img/wel4.png">
+                </div>
+                <div class="switch-btn suc-btn clearFix">
+                    <span class="active"></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="sub-btn go-back">
+                    <button type="button" class="back-btn">返回</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/common.js"></script>
+<script src="js/picScroll.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+
+    // 百度地图API功能
+    var map = new BMap.Map('allmap');
+    var poi = new BMap.Point(116.307852, 40.057031);
+    map.centerAndZoom(poi, 16);
+    map.enableScrollWheelZoom();
+
+    //样式1
+    var searchInfoWindow1 = new BMapLib.SearchInfoWindow(map, "信息框1内容", {
+        title: "信息框1", //标题
+        panel: "panel", //检索结果面板
+        enableAutoPan: true, //自动平移
+        searchTypes: [
+            BMAPLIB_TAB_FROM_HERE, //从这里出发
+            BMAPLIB_TAB_SEARCH   //周边检索
+        ]
+    });
+    searchInfoWindow1.open(new BMap.Point(116.319852, 40.057031));
+
+    //创建小狐狸
+    var myIcon = new BMap.Icon("img/map-dot.png", new BMap.Size(300,157));
+    var marker2 = new BMap.Marker(poi,{icon:myIcon});  // 创建标注
+    map.addOverlay(marker2);              // 将标注添加到地图中
+
+</script>
+</body>
+</html>

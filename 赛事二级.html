@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <title>赛事二级</title>
+    <!--calendar-->
+    <link href='plugs/calendar/fullcalendar.min.css' rel='stylesheet' />
+    <link href='plugs/calendar/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+    <!--calendar end-->
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrap pr">
+    <!--头部-->
+    <header class="head clearFix">
+        <div class="head-con">
+            <div class="logo fl">
+                <a href="#"><img src="img/logo.png"></a>
+            </div>
+            <section class="search pr fl">
+                <input type="text" placeholder="搜你喜欢的" title="搜你喜欢的">
+                <i class="pa icon-search"></i>
+            </section>
+            <section class="reg-login fl clearFix dn">
+                <button type="button" class="fl reg-btn">注册</button>
+                <button type="button" class="fl login-btn">登录</button>
+            </section>
+            <!--用户资料-->
+            <section class="user-login reg-login fl clearFix">
+                <div class="user-pic fl">
+                    <img src="img/user.png">
+                </div>
+                <button type="button" class="fl login-btn">退出</button>
+            </section>
+        </div>
+    </header>
+    <!--导航-->
+    <nav class="nav pr clearFix">
+        <ul class="clearFix">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">赛车手</a></li>
+            <li><a href="#">场馆</a></li>
+            <li>
+                <a href="#" class="active">比赛</a>
+                <div class="sub-nav-bg pa dn">
+                    <ul class="sub-list">
+                        <li class="active"><a href="#">所有赛事</a></li>
+                        <li><a href="#">地区赛事</a></li>
+                        <li><a href="#">锦标赛</a></li>
+                        <li><a href="#">排行榜</a></li>
+                        <li><a href="#">赛事日历</a></li>
+                        <li><a href="#">结果公告</a></li>
+                        <li><a href="#">赛程报道</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">赛车销售</a></li>
+            <li><a href="#">R/C公司</a></li>
+            <li><a href="#">R/C专业比赛</a></li>
+            <li><a href="#">联系我们</a></li>
+        </ul>
+    </nav>
+
+    <!--main container-->
+    <div class="match">
+        <div class="match-container">
+            <h3 class="match-tit">北京盈控国际体育发展有限公司</h3>
+            <div class="nav-bread">
+                <a class="fl" href="#">首页</a>
+                <a class="fl" href="#">比赛</a>
+                <a class="fl">北京盈控国际体育发展有限公司</a>
+            </div>
+
+            <div class="match-area clearFix match-two-level">
+                <section class="match-left fl">
+                    <div class="park-info">
+                        <h3 class="park-tit head-t"><span>车场信息</span></h3>
+                        <div class="park-info-con clearFix">
+                           <div class="fl park-pic">
+                               <img src="img/park-pic.png">
+                           </div>
+                            <div class="fl park-des">
+                                <h3>北京盈控国际体育发展有限公司</h3>
+                                <p class="phones">13701065546,(010)52150536</p>
+                                <p class="bags">赛车商店：具备</p>
+                                <p><span class="address">顺义区天竺杨二营27号</span><span class="send">发送位置到手机</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ad">720*90px</div>
+                    <div class="interest-list">
+                        <section>
+                            <h3 class="recent-events"><span>近期赛事</span></h3>
+                            <div class="interest-con recent-events-con">
+                                <div class="interest-one clearFix">
+                                    <img src="img/ticket.png" class="fl">
+                                    <div class="interest-detail fl">
+                                        <h4>四番大奖赛</h4>
+                                        <p>北京盈控国际体育发展有限公司</p>
+                                        <p>11/26/16 - 11/26/16</p>
+                                        <p>顺义区天竺杨二营26号</p>
+                                        <p>在专业技灯光照射下于11点开始，收费240元／人无限体验驾控感受，让新手比赛更具有观赏性 和趣味性，真正世界顶级赛道，等你来体</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="park-info match-d">
+                        <h3 class="match-date head-t"><span>赛场日历</span></h3>
+                        <div class="match-date-con">
+                            <div id='calendar'></div>
+                        </div>
+                    </div>
+                    <div class="park-info match-pic">
+                        <h3 class="match-pic-tit head-t"><span>赛场照片</span></h3>
+                        <div class="match-pic-con">
+                            <img src="img/match-pic.png">
+                        </div>
+                    </div>
+                </section>
+                <aside class="match-right fr">
+                    <ul>
+                        <li>320*380px</li>
+                        <li>320*380px</li>
+                        <li>320*380px</li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+
+
+    </div>
+    <!--footer-->
+    <footer class="foot">
+        <p>CopyRight © 2015-2016 Incom sport &media LTC.Com,All Right Rese</p>
+    </footer>
+    <!--发送位置给手机-->
+    <div class="send-dialog pa">
+        <div class="send-dialog-con pa">
+            <div class="send-map"></div>
+            <p class="send-map-tit">顺义区天竺杨二营26号</p>
+            <section class="send-to-phone">
+                <input type="text" placeholder="输入手机号发送地图到手机" title="输入手机号发送地图到手机">
+                <button type="button"><i class="icon-phone fl"></i><em class="fl">发送位置到手机</em></button>
+            </section>
+            <div class="close-btn"></div>
+        </div>
+    </div>
+</div>
+<script src="js/common.js"></script>
+<script src="js/main.js"></script>
+<!--calendar-->
+<script src='plugs/calendar/lib/moment.min.js'></script>
+<script src='plugs/calendar/fullcalendar.min.js'></script>
+<script>
+
+    $(document).ready(function() {
+        $('#calendar').fullCalendar({
+            header: {
+                left: '',
+                center: 'title',
+                right: ''
+            },
+            monthNames:["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"],
+            monthNamesShort:["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"],
+            dayNames:["星期日","星期一","星期二","星期三","星期四","星期五","星期六"],
+            dayNamesShort:["星期日","星期一","星期二","星期三","星期四","星期五","星期六"],
+            height:615,
+//            defaultDate: '2016-12-12',
+            editable: true,
+            views: {
+                month: {
+                    titleFormat: 'YYYY年MMMM'
+                }
+            },
+            events: [
+                {
+                    title: '26\n四番大奖赛',
+                    start: '2016-12-21',
+                    color: '#488afb',
+                    className:"bg",
+                    editable:false
+                }
+            ]
+        });
+
+    });
+
+</script>
+</body>
+</html>
